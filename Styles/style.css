@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.header-content {
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+i {
+  color: #FFFFFF;
+}
+
+.header-icons {
+  display: flex;
+  gap: 40px;
+}
+.header-icons a {
+  font-size: 1.2rem;
+}
+
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #d34040;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.nav-items {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items a {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-items a:hover {
+  animation: scaleItem 0.8s infinite alternate;
+  color: #d34040;
+}
+
+@keyframes scaleItem {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.2);
+  }
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-content i {
+    margin-top: 40px;
+  }
+  .header-content .nav-items {
+    padding-top: 10px;
+    gap: 50px;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home {
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(29, 63, 97, 0.1), #0F180A), url("../../Assets/camera-intelbras.png");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
+}
+
+.hero {
+  color: #FFFFFF;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 3rem;
+}
+.hero p {
+  text-align: center;
+  margin: 14px 0;
+  font-size: 1rem;
+}
+
+.button-contact {
+  padding: 14px 28px;
+  color: #FFFFFF;
+  background-color: #d94140;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 14px 0;
+  animation: scaleButton 0.8s infinite alternate;
+}
+
+.button-contact:hover {
+  color: #d94140;
+  border: 1px solid #d94140;
+  background-color: #FFFFFF;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    padding: 0 14px;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: 50vh;
+  }
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+}
+.partner {
+  display: flex;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.partner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 34px 14px 64px 14px;
+  min-height: 100vh;
+}
+.partner-content img {
+  width: 300px;
+  max-width: 570px;
+}
+
+.partner-content div {
+  flex: 1;
+}
+
+.partner-description h2 {
+  font-size: 3rem;
+  padding: 20px 0 20px 0;
+}
+.partner-description p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .partner-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .partner-description {
+    gap: 40px;
+  }
+  .partner-description h2 {
+    font-size: 2rem;
+  }
+  .partner-description p {
+    font-size: 0.9rem;
+  }
+}
+.services {
+  display: flex;
+  background-color: #FFFFFF;
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.services-content {
+  display: flex;
+  gap: 2vw;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.services-content div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 50px;
+  border: 2px solid;
+  border-radius: 5%;
+  background-color: #18230F;
+  color: #FFFFFF;
+  width: 50vw;
+  height: auto;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  gap: 4vw;
+}
+.services-content div h2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.services-content div p {
+  text-align: justify;
+}
+.services-content div a {
+  padding: 14px 28px;
+  color: #FFFFFF;
+  background-color: #d94140;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 14px 0;
+}
+.services-content div a:hover {
+  animation: scaleButtonProducts 0.8s infinite alternate;
+}
+@keyframes scaleButtonProducts {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-2px) scale(1.1);
+  }
+}
+
+.quality, .products, .sac {
+  min-width: 303px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 15px #2E3A1A;
+}
+
+.quality-img-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.quality-img-title i {
+  font-size: 2.7rem;
+}
+
+.products-img-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.products-img-title i {
+  font-size: 2.7rem;
+}
+
+.sac-img-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sac-img-title i {
+  font-size: 2.7rem;
+}
+
+.about {
+  background-color: #2E3A1A;
+  color: #FFFFFF;
+}
+
+.about-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
+.about-content h2 {
+  font-size: 3rem;
+  padding: 40px 0 40px 0;
+}
+
+.maps {
+  color: #FFFFFF;
+}
+
+.maps-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0;
+}
+.maps-content h2 {
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  color: #FFFFFF;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30vh;
+  gap: 20px;
+  padding: 180px 0 180px 0;
+}
+.footer .footer-icons {
+  display: flex;
+  gap: 20px;
+}
+.footer .copyright p {
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .maps-content h2 {
+    font-size: 2rem;
+  }
+  .footer .copyright p {
+    font-size: 0.6rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #0F180A;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

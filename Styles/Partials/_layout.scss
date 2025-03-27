@@ -1,0 +1,107 @@
+// HOMEPAGE ---------------------------------------
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home {
+    position: relative;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(29, 63, 97, 0.1), $primary-dark), url("../../Assets/camera-intelbras.png");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+//--------------------------------------------------
+
+// HERO --------------------------------------------
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+        margin: 14px 0;
+        font-size: 1rem;
+    }
+}
+
+.button-contact {
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-normal;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 14px 0;
+    animation: scaleButton 0.8s infinite alternate;
+}
+
+.button-contact:hover {
+    color: $red-normal;
+    border: 1px solid $red-normal;
+    background-color: $white-normal;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+
+        h1 {
+            font-size: 2rem;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        min-height: 50vh;
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    
+}
+//--------------------------------------------------

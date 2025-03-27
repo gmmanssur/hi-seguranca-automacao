@@ -1,0 +1,128 @@
+.about {
+    background-color: $primary-light;
+    color: $white-normal;
+}
+
+.about-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 3rem;
+        padding: 40px 0 40px 0;
+    }
+}
+
+
+// .about {
+//     background-color: $primary-light;
+// }
+
+// .about-content {
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     height: 100vh;
+//     justify-content: center;
+//     padding: 50px;
+//     color: $white-normal;
+
+//     h2 {
+//         text-align: center;
+//         padding: 30px 0 30px 0;
+//     }
+// }
+
+// .time-line {
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     padding: 50px;
+//     max-width: 100%;
+//     max-height: 100%;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
+
+// .line {
+//     text-align: center;
+//     position: absolute;
+//     width: 8px;
+//     height: 665px;
+//     background-color: $primary-normal;
+//     margin: 0 auto;
+//     left: 50%;
+//     border-radius: 10px;
+// }
+
+// .time-line-item {
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     width: 30%;
+//     min-width: 240px;
+//     margin: 10px;
+//     background-color: $primary-dark;
+//     border-radius: 10px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+//     box-sizing: border-box;
+
+//     h3 {
+//         align-items: center;
+//         text-align: center;
+//         width: 300px;
+//         height: auto;
+//         color: $primary-normal;
+//         background-color: $white-normal;
+//         border-radius: 10px;
+//     }
+
+//     p {
+//         width: 100%;
+//         padding: 15px;
+//         text-align: justify;
+//     }
+// }
+
+// .time-line-item:before {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: -15px;
+//     width: 0;
+//     height: 0;
+//     border-radius: 50%;
+//     border-left: 10px solid transparent;
+//     border-right: 10px solid transparent;
+//     border-top: 10px solid $primary-normal;
+//     background-color: $primary-normal;
+//     transform: translateY(-50%);
+// }
+
+// .time-line-item-content {
+//     display: flex;
+// }
+
+// @media (max-width: 768px) {
+//     .time-line {
+//         padding: 20px;
+//     }
+
+//     .time-line-item {
+//         width: 100%;
+//         margin-bottom: 20px;
+//     }
+
+//     .line {
+//         position: relative;
+//         height: auto;
+//         width: 100%;
+//         left: 0;
+//         top: 0;
+//     }
+// }

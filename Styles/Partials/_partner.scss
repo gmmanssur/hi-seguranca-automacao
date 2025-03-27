@@ -1,0 +1,59 @@
+// PARTNERS ----------------------------------------
+.partner {
+    display: flex;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.partner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    gap: 20px;
+    padding: 34px 14px 64px 14px;
+    min-height: 100vh;
+
+    img {
+        width: 300px;
+        max-width: 570px;
+    }
+}
+
+.partner-content div {
+    flex: 1;
+}
+
+.partner-description {
+    h2 {
+        font-size: 3rem;
+        padding: 20px 0 20px 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partner-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center ;
+        gap: 40px;
+    }
+
+    .partner-description {
+        gap: 40px;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+//--------------------------------------------------

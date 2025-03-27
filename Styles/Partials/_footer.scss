@@ -1,0 +1,51 @@
+// FOOTER ------------------------------------------
+.maps {
+    color: $white-normal;
+}
+
+.maps-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer {
+    color: $white-normal;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30vh;
+    gap: 20px;
+    
+    padding: 180px 0 180px 0;
+
+    .footer-icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .copyright p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .maps-content h2 {
+        font-size: 2rem;
+    }
+
+    .footer .copyright p {
+        font-size: 0.6rem;
+    }
+}
+//--------------------------------------------------
